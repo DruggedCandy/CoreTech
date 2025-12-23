@@ -1,0 +1,315 @@
+/* Загальні стилі */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF2EF;
+}
+
+:root {
+    --primary-color: #1A2A4F;
+    --accent-color: #F7A5A5;
+    --bg-color: #FFDBB6;
+    --light-bg: #FFF2EF;
+}
+
+/* Modern UI additions */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: rgba(20,20,20,0.95);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Cards and general surfaces */
+.card, .product-card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card {
+    box-shadow: 0 8px 30px rgba(26,42,79,0.06);
+    border: none;
+}
+footer {
+    margin-top: auto;
+}
+
+/* Стилі для карток товарів */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #dee2e6;
+    background-color: var(--bg-color);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+}
+
+.product-card .card-body {
+    padding: 1rem 1rem 1.25rem 1rem;
+}
+
+/* Стилі для героя */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: white;
+}
+
+.hero-section h1 {
+    color: white;
+}
+
+.hero-section {
+    padding: 60px 0;
+    background-blend-mode: overlay;
+}
+
+.hero-section .btn {
+    padding: 12px 26px;
+    font-size: 1.05rem;
+    border-radius: 10px;
+}
+
+/* Стилі для навігації */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navbar modern look */
+.site-navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 6px 20px rgba(26,42,79,0.08);
+}
+
+.navbar .nav-link {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* Стилі для кошика */
+#cart-count {
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+.badge-accent {
+    background-color: var(--accent-color) !important;
+    color: #1A2A4F !important;
+}
+
+/* Megamenu styles */
+.megamenu {
+    width: 720px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(26,42,79,0.08);
+    border: none;
+}
+.megamenu h6 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+.megamenu a {
+    color: rgba(20,20,20,0.85);
+    text-decoration: none;
+}
+.megamenu a:hover { text-decoration: underline; }
+
+/* Floating cart button */
+.floating-cart {
+    position: fixed;
+    right: 20px;
+    bottom: 22px;
+    background: var(--primary-color);
+    color: white;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(26,42,79,0.12);
+    z-index: 1050;
+}
+.floating-cart .count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Fly image animation helper */
+.fly-image {
+    position: fixed;
+    pointer-events: none;
+    z-index: 2000;
+    transition: transform 0.7s cubic-bezier(.2,.8,.2,1), opacity 0.7s;
+    border-radius: 8px;
+}
+
+/* Стилі для сторінки товару */
+.product-details img {
+    max-height: 500px;
+    object-fit: contain;
+}
+
+/* Buttons using palette */
+.btn-primary-custom {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    box-shadow: 0 8px 20px rgba(26,42,79,0.08);
+}
+
+.btn-accent {
+    background: var(--accent-color);
+    color: #1A2A4F;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 14px;
+}
+
+/* Button hover/focus states for better contrast */
+.btn-primary-custom:hover, .btn-primary-custom:focus {
+    background: #12203a; /* slightly darker primary */
+    color: #fff;
+    transform: translateY(-2px);
+}
+.btn-accent:hover, .btn-accent:focus {
+    filter: brightness(0.95);
+    transform: translateY(-2px);
+}
+
+/* Megamenu placement fixes: ensure stable alignment under toggle */
+.nav-item.dropdown { position: static; }
+.dropdown-menu.megamenu {
+    left: 0 !important;
+    right: auto !important;
+    top: calc(100% + 8px) !important;
+    transform: none !important;
+    width: min(92vw, 720px);
+}
+
+/* On small screens, make megamenu full width and readable */
+@media (max-width: 768px) {
+    .dropdown-menu.megamenu {
+        position: static !important;
+        width: 100% !important;
+        margin-top: 0.5rem;
+        border-radius: 8px;
+    }
+}
+
+/* Стилі для кошика на сторінці */
+.list-group-item {
+    padding: 1.5rem;
+}
+
+.quantity-input {
+    max-width: 70px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .product-card img {
+        height: 250px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .list-group-item .row > div {
+        margin-bottom: 1rem;
+    }
+    
+    .list-group-item .row > div:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Анімація для кнопок */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Стилі для breadcrumb */
+.breadcrumb {
+    background-color: var(--bg-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Стилі для фільтрів */
+.form-select,
+.form-control {
+    transition: border-color 0.3s ease;
+}
+
+.form-select:focus,
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.18rem rgba(26,42,79,0.12);
+}
+
+/* Стилі для порожнього кошика */
+#empty-cart i {
+    font-size: 5rem;
+}
+
+/* Small responsive tweaks */
+@media (min-width: 992px) {
+    .hero-section {
+        padding: 80px 0;
+    }
+}
+
+/* Helper surface classes */
+.bg-block {
+    background-color: var(--bg-color) !important;
+}
+
+.site-footer {
+    background-color: var(--primary-color);
+    color: white;
+}

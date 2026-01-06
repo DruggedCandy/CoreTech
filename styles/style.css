@@ -28,6 +28,9 @@ body.dark-theme {
     --border-color: #333333;
     --shadow-color: rgba(0,0,0,0.3);
 }
+body.dark-theme .bg-block{
+    background-color: #333 !important; 
+}
 
 body.dark-theme .site-navbar {
     background-color: #0f0f0f !important;
@@ -170,28 +173,6 @@ footer {
     padding: 12px 26px;
     font-size: 1.05rem;
     border-radius: 10px;
-}
-
-/* Compact hero styles */
-.hero-compact {
-    background: linear-gradient(135deg, var(--primary-color) 0%, rgba(247,165,165,0.05) 100%);
-    color: var(--text-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-.hero-compact .hero-image {
-    max-height: 420px;
-    object-fit: cover;
-    box-shadow: 0 12px 30px var(--shadow-color);
-}
-
-/* Featured categories */
-.card.text-decoration-none h5 {
-    color: var(--primary-color);
-}
-.card.text-decoration-none:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 40px var(--shadow-color);
 }
 
 /* Стилі для навігації */

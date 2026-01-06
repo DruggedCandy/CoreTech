@@ -29,7 +29,7 @@ body.dark-theme {
     --shadow-color: rgba(0,0,0,0.3);
 }
 body.dark-theme .bg-block{
-    background-color: #333 !important; 
+    background-color: #333 !important;
 }
 
 body.dark-theme .site-navbar {

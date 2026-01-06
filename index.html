@@ -11,72 +11,92 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Навігація -->
-    <nav class="navbar site-navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <i class="bi bi-shop"></i> Мій Магазин
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Головна</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="catalogDropdown" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Каталог</a>
-                        <div class="dropdown-menu megamenu p-4" aria-labelledby="catalogDropdown">
-                            <div class="megamenu-content">Завантаження...</div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cart.html">
-                            <i class="bi bi-cart3"></i> Кошик
-                            <span class="badge badge-accent" id="cart-count">0</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <!-- Unified Header -->
+        <nav class="navbar site-navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <i class="bi bi-code-square me-2"></i> CoreTech
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <form class="d-flex mx-auto header-search" role="search" onsubmit="event.preventDefault(); window.location='products.html';">
+                        <input class="form-control me-2" type="search" placeholder="Пошук товарів..." id="header-search-input" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
 
-    <!-- Hero Section (Swiper carousel) -->
-    <section class="hero-section">
-        <div class="container-fluid p-0">
-            <div class="swiper heroSwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1600&h=700&fit=crop'); background-size: cover; background-position: center;">
-                        <div class="d-flex align-items-center" style="min-height: 600px; background: linear-gradient(180deg, rgba(26,42,79,0.45), rgba(26,42,79,0.25));">
-                            <div class="container text-center text-white">
-                                <h1 class="display-3 fw-bold mb-3">Ласкаво просимо в наш магазин!</h1>
-                                <p class="lead fs-5 mb-4">Найкращі товари за найкращими цінами з швидкою доставкою по всій країні</p>
-                                <div class="d-flex gap-3 justify-content-center">
-                                    <a href="products.html" class="btn btn-primary-custom btn-lg">
-                                        <i class="bi bi-shop"></i> Переглянути каталог
-                                    </a>
-                                    <a href="#advantages" class="btn btn-outline-light btn-lg">
-                                        <i class="bi bi-info-circle"></i> Дізнатися більше
-                                    </a>
-                                </div>
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Головна</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="catalogDropdown" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Каталог</a>
+                            <div class="dropdown-menu megamenu p-4" aria-labelledby="catalogDropdown">
+                                <div class="megamenu-content">Завантаження...</div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1513708928679-1f2b9b2a4b8f?w=1600&h=700&fit=crop'); background-size: cover; background-position: center;">
-                        <div class="d-flex align-items-center" style="min-height: 600px; background: linear-gradient(180deg, rgba(26,42,79,0.45), rgba(26,42,79,0.25));">
-                            <div class="container text-center text-white">
-                                <h1 class="display-4 fw-bold mb-3">Нові надходження кожного тижня</h1>
-                                <p class="lead fs-5 mb-4">Підпишіться на розсилку та отримуйте знижки</p>
-                                <a href="products.html" class="btn btn-accent btn-lg">Переглянути акції</a>
-                            </div>
-                        </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">
+                                <i class="bi bi-cart3"></i> Кошик
+                                <span class="badge badge-accent" id="cart-count">0</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <button class="theme-toggle btn p-1" id="theme-toggle" title="Перемкнути тему">
+                                <i class="bi bi-moon-stars"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Compact Hero -->
+    <section class="hero-compact py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Ласкаво просимо в CoreTech</h1>
+                    <p class="lead text-muted">Сучасні гаджети та аксесуари для роботи і хобі. Швидка доставка по Україні.</p>
+                    <div class="d-flex gap-3">
+                        <a href="products.html" class="btn btn-primary-custom btn-lg">Переглянути каталог</a>
+                        <a href="#advantages" class="btn btn-accent btn-lg">Наші переваги</a>
                     </div>
                 </div>
-                <!-- Пагінація/навігація -->
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1000&h=600&fit=crop" class="hero-image img-fluid rounded" alt="Hero image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Популярні категорії</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a href="products.html" class="card text-decoration-none h-100 text-center p-3">
+                        <i class="bi bi-phone text-primary" style="font-size:2.5rem;"></i>
+                        <h5 class="mt-3">Гаджети</h5>
+                        <p class="text-muted small">Смартфони, планшети та аксесуари</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="products.html" class="card text-decoration-none h-100 text-center p-3">
+                        <i class="bi bi-laptop text-primary" style="font-size:2.5rem;"></i>
+                        <h5 class="mt-3">Ноутбуки</h5>
+                        <p class="text-muted small">Легкі та потужні для роботи</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="products.html" class="card text-decoration-none h-100 text-center p-3">
+                        <i class="bi bi-headphones text-primary" style="font-size:2.5rem;"></i>
+                        <h5 class="mt-3">Аудіо</h5>
+                        <p class="text-muted small">Навушники, колонки та аксесуари</p>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -251,7 +271,7 @@
             </div>
             <hr class="bg-white-50">
             <div class="text-center text-white-50">
-                <p class="mb-0">&copy; 2024 Мій Магазин. Всі права захищені.</p>
+                <p class="mb-0">&copy; 2024 CoreTech. Всі права захищені.</p>
             </div>
         </div>
     </footer>
@@ -266,17 +286,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/cart.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/theme.js"></script>
     <script>
-        // Ініціалізація Swiper для hero
-        const heroSwiper = new Swiper('.heroSwiper', {
-            slidesPerView: 1,
-            loop: true,
-            autoplay: { delay: 4500, disableOnInteraction: false },
-            pagination: { el: '.swiper-pagination', clickable: true },
-            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
-        });
-
-        // Затримка ініціалізації reviewsSwiper, щоб не конфліктувати
+        // Ініціалізація reviewsSwiper
         const reviewsSwiper = new Swiper('.reviewsSwiper', {
             slidesPerView: 1,
             spaceBetween: 20,

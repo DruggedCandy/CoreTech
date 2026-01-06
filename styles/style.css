@@ -1,21 +1,99 @@
 /* Загальні стилі */
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #FFF2EF;
-}
-
 :root {
     --primary-color: #1A2A4F;
     --accent-color: #F7A5A5;
     --bg-color: #FFDBB6;
     --light-bg: #FFF2EF;
+    --text-color: #1A1A1A;
+    --text-light: rgba(20,20,20,0.95);
+    --border-color: #dee2e6;
+    --shadow-color: rgba(26,42,79,0.06);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF2EF;
+    color: var(--text-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Тема: Темна */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    --text-color: #e0e0e0;
+    --text-light: #e0e0e0;
+    --border-color: #333333;
+    --shadow-color: rgba(0,0,0,0.3);
+}
+
+body.dark-theme .site-navbar {
+    background-color: #0f0f0f !important;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3) !important;
+}
+
+body.dark-theme .card,
+body.dark-theme .product-card {
+    background-color: #2a2a2a;
+    border-color: #333333;
+    color: #e0e0e0;
+}
+
+body.dark-theme .form-control,
+body.dark-theme .form-select {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444444;
+}
+
+body.dark-theme .form-control:focus,
+body.dark-theme .form-select:focus {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: var(--accent-color);
+}
+
+body.dark-theme .megamenu {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+body.dark-theme .megamenu a {
+    color: #b0b0b0;
+}
+
+body.dark-theme .list-group-item {
+    background-color: #2a2a2a;
+    border-color: #333333;
+    color: #e0e0e0;
+}
+
+body.dark-theme .site-footer {
+    background-color: #0f0f0f;
+}
+
+body.dark-theme .breadcrumb {
+    background-color: #2a2a2a;
+}
+
+body.dark-theme .breadcrumb-item.active {
+    color: #e0e0e0;
+}
+
+body.dark-theme .breadcrumb-item a {
+    color: #b0b0b0;
+}
+
+body.dark-theme .text-muted {
+    color: #999999 !important;
 }
 
 /* Modern UI additions */
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *, *:before, *:after { box-sizing: inherit; }
 
@@ -30,12 +108,19 @@ body {
 .card, .product-card {
     border-radius: 12px;
     overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .card {
-    box-shadow: 0 8px 30px rgba(26,42,79,0.06);
+    box-shadow: 0 8px 30px var(--shadow-color);
     border: none;
+    background: white;
 }
+
+body.dark-theme .card {
+    background: #2a2a2a;
+}
+
 footer {
     margin-top: auto;
 }
@@ -43,13 +128,13 @@ footer {
 /* Стилі для карток товарів */
 .product-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #dee2e6;
+    border: 1px solid var(--border-color);
     background-color: var(--bg-color);
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px var(--shadow-color);
 }
 
 .product-card img {
@@ -71,17 +156,42 @@ footer {
 
 .hero-section h1 {
     color: white;
+    font-weight: 800;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .hero-section {
     padding: 60px 0;
     background-blend-mode: overlay;
+    position: relative;
 }
 
 .hero-section .btn {
     padding: 12px 26px;
     font-size: 1.05rem;
     border-radius: 10px;
+}
+
+/* Compact hero styles */
+.hero-compact {
+    background: linear-gradient(135deg, var(--primary-color) 0%, rgba(247,165,165,0.05) 100%);
+    color: var(--text-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.hero-compact .hero-image {
+    max-height: 420px;
+    object-fit: cover;
+    box-shadow: 0 12px 30px var(--shadow-color);
+}
+
+/* Featured categories */
+.card.text-decoration-none h5 {
+    color: var(--primary-color);
+}
+.card.text-decoration-none:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px var(--shadow-color);
 }
 
 /* Стилі для навігації */
@@ -93,7 +203,8 @@ footer {
 /* Navbar modern look */
 .site-navbar {
     background-color: var(--primary-color);
-    box-shadow: 0 6px 20px rgba(26,42,79,0.08);
+    box-shadow: 0 6px 20px var(--shadow-color);
+    transition: background-color 0.3s ease;
 }
 
 .navbar .nav-link {
@@ -107,6 +218,46 @@ footer {
 
 .nav-link:hover {
     color: var(--accent-color) !important;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: white;
+}
+
+/* Header search */
+.header-search {
+    max-width: 720px;
+    width: 100%;
+}
+.header-search .form-control {
+    border-radius: 8px 0 0 8px;
+}
+.header-search .btn {
+    border-radius: 0 8px 8px 0;
+}
+
+/* Top filters bar */
+.filters-bar {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px var(--shadow-color);
+}
+@media (max-width: 768px) {
+    .header-search { display: none; }
+    .filters-bar .row > div { flex: 1 1 100%; }
 }
 
 /* Стилі для кошика */
@@ -126,18 +277,37 @@ footer {
     width: 720px;
     border-radius: 12px;
     background: white;
-    box-shadow: 0 10px 30px rgba(26,42,79,0.08);
+    box-shadow: 0 10px 30px var(--shadow-color);
     border: none;
+    animation: slideDown 0.3s ease;
 }
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .megamenu h6 {
     font-size: 0.95rem;
     margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
 }
 .megamenu a {
     color: rgba(20,20,20,0.85);
     text-decoration: none;
+    transition: color 0.2s ease;
 }
-.megamenu a:hover { text-decoration: underline; }
+.megamenu a:hover { 
+    color: var(--accent-color);
+    text-decoration: none;
+}
 
 /* Floating cart button */
 .floating-cart {
@@ -152,9 +322,17 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 30px rgba(26,42,79,0.12);
+    box-shadow: 0 10px 30px var(--shadow-color);
     z-index: 1050;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
+
+.floating-cart:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px var(--shadow-color);
+}
+
 .floating-cart .count {
     position: absolute;
     top: -6px;
@@ -193,7 +371,8 @@ footer {
     border: none;
     border-radius: 10px;
     padding: 10px 18px;
-    box-shadow: 0 8px 20px rgba(26,42,79,0.08);
+    box-shadow: 0 8px 20px var(--shadow-color);
+    transition: all 0.3s ease;
 }
 
 .btn-accent {
@@ -202,17 +381,20 @@ footer {
     border: none;
     border-radius: 10px;
     padding: 8px 14px;
+    transition: all 0.3s ease;
 }
 
 /* Button hover/focus states for better contrast */
 .btn-primary-custom:hover, .btn-primary-custom:focus {
     background: #12203a; /* slightly darker primary */
     color: #fff;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px var(--shadow-color);
 }
 .btn-accent:hover, .btn-accent:focus {
     filter: brightness(0.95);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--shadow-color);
 }
 
 /* Megamenu placement fixes: ensure stable alignment under toggle */
@@ -283,13 +465,18 @@ footer {
 /* Стилі для фільтрів */
 .form-select,
 .form-control {
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
 }
 
 .form-select:focus,
 .form-control:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 0.18rem rgba(26,42,79,0.12);
+    background-color: white;
+    color: #333;
 }
 
 /* Стилі для порожнього кошика */

@@ -74,20 +74,20 @@
   ,
   {
     "id": 9,
-    "title": "Смартфон Novashnik X1",
+    "title": "Honor magic 8 pro",
     "description": "Новий смартфон з великим екраном і 5G",
-    "fullDescription": "Novashnik X1 — стильний смартфон із 6.6\" AMOLED дисплеєм, процесором нового покоління, потрійною камерою 50 Мп, батареєю 5000 мАг та підтримкою 5G. Ідеальний баланс ціни та можливостей.",
+    "fullDescription": "Honor magic 8 pro — стильний смартфон із 6.6\" AMOLED дисплеєм, процесором нового покоління, потрійною камерою 50 Мп, батареєю 5000 мАг та підтримкою 5G. Ідеальний баланс ціни та можливостей.",
     "price": 10999,
-    "image": "img/product-9.svg",
+    "image": "https://pinpack.pk/PinPackProductImages/54/1-c1-honor-magic-8-pro-84ufd6xm.webp",
     "category": "Смартфони"
   },
   {
     "id": 10,
-    "title": "Смартфон Novashnik Lite",
+    "title": "Huawei Pura 80 ultra",
     "description": "Компактний смартфон для щоденних задач",
     "fullDescription": "Novashnik Lite — компактний та надійний телефон з 6.1\" IPS дисплеєм, подвійною камерою 12 Мп, 4 ГБ оперативної пам'яті та 128 ГБ вбудованої пам'яті. Підійде як другий або робочий телефон.",
     "price": 6999,
-    "image": "img/product-10.svg",
+    "image": "https://dnn.in.ua/content/images/29/536x460l50nn0/42573006949727.jpg",
     "category": "Смартфони"
   },
   {
@@ -96,7 +96,7 @@
     "description": "Бездротові TWS навушники з зарядним кейсом",
     "fullDescription": "TrueSound TWS — легкі навушники з хорошою якістю звучання та автономністю до 24 годин з кейсом. Підключаються по Bluetooth 5.2, мають сенсорне управління та шумозаглушення середнього рівня.",
     "price": 1999,
-    "image": "img/product-11.svg",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41AbDvT+DoL._SL500_._AC_SL500_.jpg",
     "category": "Аудіо"
   },
   {
@@ -105,16 +105,16 @@
     "description": "Механічна клавіатура з RGB-підсвічуванням",
     "fullDescription": "NovaKeys — компактна 87-клавішна механічна клавіатура з червоними перемикачами, програмованими макросами та RGB-підсвічуванням. Ідеальна для геймерів та любителів механіки.",
     "price": 2799,
-    "image": "img/product-12.svg",
+    "image": "https://novelkeys.com/cdn/shop/files/DCS_Superweld_AtomHHKB_Wide_800x800.png?v=1767110505",
     "category": "Аксесуари"
   },
   {
     "id": 13,
-    "title": "Геймерська миша HyperGrip",
+    "title": "Logitech g102",
     "description": "Оптична миша з високою точністю",
     "fullDescription": "HyperGrip — ігрова миша з сенсором 16000 DPI, настроюваними кнопками та ергономічним корпусом. Підключається по USB, має підсвічування та змінні вагові пластини.",
     "price": 1499,
-    "image": "img/product-13.svg",
+    "image": "https://content1.rozetka.com.ua/goods/images/original/24709323.jpg",
     "category": "Аксесуари"
   },
   {
@@ -123,7 +123,7 @@
     "description": "10\" планшет для мультимедіа та навчання",
     "fullDescription": "TabGo 10 — легкий планшет з 10-дюймовим дисплеєм, Android OS, 4 ГБ ОЗП та 64 ГБ пам'яті. Підходить для перегляду відео, читання та навчальних додатків.",
     "price": 3999,
-    "image": "img/product-14.svg",
+    "image": "https://img.kwcdn.com/product/fancy/34c62c7a-709d-448b-be09-56e92fea3e26.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp",
     "category": "Електроніка"
   },
   {
@@ -132,7 +132,7 @@
     "description": "Портативний зарядний пристрій 10000 mAh",
     "fullDescription": "Компактний пауербанк 10000 mAh з підтримкою швидкої зарядки 18W. Має два USB-порти, індикатор заряду та надійний корпус.",
     "price": 799,
-    "image": "img/product-15.svg",
+    "image": "https://videx.ua/files/products/86726516-0698-11ee-8366-78e7d1920008.1600x1340w.jpeg",
     "category": "Аксесуари"
   }
 ,
@@ -142,7 +142,7 @@
     "description": "Флагманський смартфон OnePlus",
     "fullDescription": "OnePlus 12 — флагман із 6.82-inch OLED дисплеєм, процесором Snapdragon нового покоління, трьома камерами (50+48+12 Мп), батареєю 5000 mAh і швидкою зарядкою 100W. Підтримка 5G.",
     "price": 29999,
-    "image": "img/product-16.svg",
+    "image": "https://img.mta.ua/image/cache/data/foto/z895/895338/photos/OnePlus-12-16512GB-76-Flowy-Emerald-01-600x600.jpg",
     "category": "Смартфони"
   },
   {
@@ -151,7 +151,7 @@
     "description": "Преміум смартфон з акцентом на камеру",
     "fullDescription": "Google Pixel 10 Pro XL — фотоорієнтований флагман з 6.9-inch LTPO дисплеєм, камерою 50 Мп з поліпшеним нічним режимом, процесором Tensor наступного покоління та батареєю 4900 mAh. Підтримка 5G.",
     "price": 33999,
-    "image": "img/product-17.svg",
+    "image": "https://pixelmania.com.ua/image/cache/catalog/image/cache/catalog/img/10125/smartfon-google-pixel-10-pro-xl-16-256gb-moonstone-global-5-1200x1200.webp",
     "category": "Смартфони"
   },
   {
@@ -160,7 +160,7 @@
     "description": "Найпотужніший iPhone у серії",
     "fullDescription": "Apple iPhone 17 Pro Max — потужний смартфон з 6.9-inch Super Retina XDR дисплеєм, чіпом A-серії нового покоління, просунутою системою камер та довготривалою автономністю. Працює на iOS із повною інтеграцією екосистеми.",
     "price": 44999,
-    "image": "img/product-18.svg",
+    "image": "https://i.allo.ua/media/catalog/product/cache/3/image/710x600/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-17-pro-finish-select-202509-6-9inch-cosmicorange_result.webp",
     "category": "Смартфони"
   },
   {
@@ -169,7 +169,7 @@
     "description": "Професійний ноутбук для творчих задач",
     "fullDescription": "MacBook Pro 16 — професійний ноутбук з Apple M4 Pro, 16-32 ГБ ОЗП, швидким SSD і дисплеєм Liquid Retina XDR 16-inch. Ідеальний для відеомонтажу, 3D та графіки.",
     "price": 79999,
-    "image": "img/product-19.svg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRROze2k9rj1OyzCsrM_46qYENTM-HIz88KHg&s",
     "category": "Ноутбуки"
   },
   {
@@ -178,7 +178,7 @@
     "description": "Потужний ноутбук для професіоналів",
     "fullDescription": "Dell XPS 15 — потужний ноутбук із 15.6-inch OLED дисплеєм, процесором Intel Core серії H, до 64 ГБ ОЗП та дискретною відеокартою. Витончений корпус та відмінна продуктивність.",
     "price": 62999,
-    "image": "img/product-20.svg",
+    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/touch-black/notebook-xps-15-9530-t-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=654&qlt=100,1&resMode=sharp2&size=654,402&chrss=full",
     "category": "Ноутбуки"
   },
   {
@@ -187,7 +187,7 @@
     "description": "Легкий бізнес-ноутбук",
     "fullDescription": "Lenovo ThinkPad X1 Carbon — бізнес-ноутбук з міцним корпусом, тривалим часом роботи від батареї та клавіатурою класу ThinkPad. Підійде для подорожей та офісної роботи.",
     "price": 54999,
-    "image": "img/product-21.svg",
+    "image": "https://content2.rozetka.com.ua/goods/images/big/432031646.jpg",
     "category": "Ноутбуки"
   },
   {
@@ -196,7 +196,7 @@
     "description": "Професійна бездротова миша",
     "fullDescription": "Logitech MX Master 4 — ергономічна бездротова миша з високоточним сенсором, програмованими кнопками та тривалим часом автономної роботи. Ідеальна для продуктивності та творчих задач.",
     "price": 3299,
-    "image": "img/product-22.svg",
+    "image": "https://cdn.comfy.ua/media/catalog/product/cache/4/image/600x/9df78eab33525d08d6e5fb8d27136e95/1/_/1_358_12.jpg",
     "category": "Аксесуари"
   },
   {
@@ -205,7 +205,7 @@
     "description": "Геймерська оптична миша",
     "fullDescription": "Razer DeathAdder V3 — легка та точна ігрова миша з сенсором високої чутливості, RGB-підсвічуванням та настроюваними кнопками. Підходить для професійних геймерів.",
     "price": 2499,
-    "image": "img/product-23.svg",
+    "image": "https://defis.ua/image/cache/catalog/2/24/24421_1-xW.jpg",
     "category": "Аксесуари"
   },
   {
@@ -214,7 +214,7 @@
     "description": "Механічна клавіатура компактного формату",
     "fullDescription": "Keychron K8 Pro — компактна 75% механічна клавіатура з гарною тактильною віддачею, бездротовим режимом та RGB-підсвічуванням. Підходить для роботи та ігор.",
     "price": 4999,
-    "image": "img/product-24.svg",
+    "image": "https://content.rozetka.com.ua/goods/images/big/379680300.jpg",
     "category": "Аксесуари"
   },
   {
@@ -223,7 +223,7 @@
     "description": "Популярна компактна механічна клавіатура",
     "fullDescription": "Ducky One 3 Mini — 60% механічна клавіатура з високоякісними перемикачами, міцною конструкцією та приємною підсвіткою. Вибір для ентузіастів клавіатур.",
     "price": 4699,
-    "image": "img/product-25.svg",
+    "image": "https://api.e-server.com.ua/storage/405399/rs/U1010692_2_1738012886___rs_1200_1200.jpg",
     "category": "Аксесуари"
   },
   {
@@ -232,7 +232,7 @@
     "description": "Навушники з топовим шумозаглушенням",
     "fullDescription": "Bose QuietComfort Ultra — преміальні навушники з активним шумозаглушенням, відмінною якістю звуку та комфортною посадкою. До 30 годин автономної роботи.",
     "price": 9999,
-    "image": "img/product-26.svg",
+    "image": "https://content.rozetka.com.ua/goods/images/big/387201138.jpg",
     "category": "Аудіо"
   }
 ]

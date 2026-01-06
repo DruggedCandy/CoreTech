@@ -27,12 +27,14 @@ function displayCart() {
     for (let key in cart.items) {
         const item = cart.items[key]
         const itemTotal = item.price * item.quantity
-        
+        const imgVal = item.image ? String(item.image) : ''
+        const imgSrc = (imgVal.startsWith('http') || imgVal.startsWith('/') || imgVal.startsWith('img/')) ? imgVal : `img/${imgVal}`
+
         cartHTML += `
             <div class="list-group-item">
                 <div class="row align-items-center">
                     <div class="col-md-2">
-                        <img src="img/${item.image}" class="img-fluid rounded" alt="${item.title}"
+                        <img src="${imgSrc}" class="img-fluid rounded" alt="${item.title}"
                              onerror="this.src='https://via.placeholder.com/100x100?text=Немає+зображення'">
                     </div>
                     <div class="col-md-4">
